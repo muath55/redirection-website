@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #redirect-info {
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Redirect function with delay
+        function redirect() {
+            // Inform the user about the redirection
+            document.getElementById('redirect-info').innerText = "Loading...";
+            
+            // Delay before redirection (in milliseconds)
+            setTimeout(function(){
+                // Change the URL below to the destination URL
+                window.location.href = "https://synergysun.biz/101637ea1cc87dd4800/opt1";
+            }, 0); // 3000 milliseconds = 3 seconds
+        }
+
+        // Call redirect function when the page loads
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <p id="redirect-info">Please wait...</p>
+</body>
+</html>
